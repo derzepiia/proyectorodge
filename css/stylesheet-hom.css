@@ -1,0 +1,388 @@
+body { 
+    margin: 0; 
+    min-height: 100vh; 
+    font-family: 'Poppins', sans-serif; 
+    font-weight: bold; 
+    font-size: 20px; 
+    background-size: 1920px 1080px; 
+    background-position: center; 
+} 
+
+/* TOP BAR */ 
+
+.top-bar { 
+    width: 100%; 
+    display: flex; 
+    align-items: center; 
+    padding: 10px 15px; 
+    background-color: #5a5a5a; 
+    font-size: 14px; 
+    height: 30px; 
+    box-sizing: border-box; 
+} 
+
+.mi-cuenta { 
+    display: inline-flex; 
+    align-items: center; 
+    gap: 8px; 
+    background: none; 
+    border: none; 
+    color: rgb(255, 255, 255); 
+    cursor: pointer; 
+    padding: 6px 10px; 
+    border-radius: 6px; 
+} 
+
+.mi-cuenta img { 
+    width: 22px; 
+    height: 22px; 
+    object-fit: contain; 
+} 
+
+.mi-cuenta span { 
+    font-size: 0.875rem; 
+    font-family: Arial, sans-serif; 
+    white-space: nowrap; 
+} 
+
+/* NAVBAR */ 
+
+.main-navbar { 
+    background: #98FF98; 
+    border-bottom: 10px solid #2e8a1c9c; 
+} 
+
+.navbar-nav .nav-link { 
+    color: rgb(0, 0, 0) !important; 
+    font-weight: 500; 
+    padding: 20px 10px; 
+} 
+
+.navbar-nav .nav-link:hover { 
+    color: #045523 !important; 
+} 
+
+.dropdown-menu { 
+    border-radius: 0; 
+} 
+
+/* HERO */ 
+
+.container-biemvenido { 
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 40px; 
+    border-radius: 12px; 
+    max-width: 900px; 
+    margin: 0 auto; 
+    text-align: center; 
+} 
+
+.container-biemvenido h1 { 
+    text-align: center; 
+} 
+
+.container-biemvenido .lead { 
+    text-align: center; 
+    margin-left: auto; 
+    margin-right: auto; 
+    max-width: 700px; 
+} 
+
+.hero-section { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+} 
+
+/* SECCIONES */ 
+
+section { 
+    min-height: 100vh; 
+    padding: 120px 40px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+} 
+
+section h1 { 
+    font-size: 3rem; 
+    margin-bottom: 20px; 
+} 
+
+section p { 
+    max-width: 700px; 
+    font-size: 1.2rem; 
+    line-height: 1.8; 
+} 
+
+/* CANCHAS */ 
+
+#canchas .row { 
+    margin-bottom: 50px; 
+    align-items: center; 
+} 
+
+#canchas img { 
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+} 
+
+#canchas h3 { 
+    font-size: 2rem; 
+    margin-bottom: 15px; 
+    text-align: left; 
+} 
+
+#canchas p { 
+    font-size: 1.2rem; 
+    line-height: 1.6; 
+    text-align: left; 
+} 
+
+/* COLORES DE SECCIONES */ 
+
+#canchas { 
+    background: #ECE5FF; 
+} 
+
+#localizacion { 
+    background: #ECE5FF; 
+} 
+
+#noticias { 
+    background: #ECE5FF; 
+} 
+
+#contacto { 
+    background: #ECE5FF; 
+    color: white; 
+} 
+
+#resenas { 
+    background: #334155; 
+    color: white; 
+    width: 100%; 
+    box-sizing: border-box; 
+} 
+
+/* RESPONSIVE CANCHAS */ 
+
+@media (max-width: 768px) { 
+
+    #canchas h3, 
+    #canchas p { 
+        text-align: center; 
+    } 
+
+    #canchas .row { 
+        flex-direction: column !important; 
+    } 
+
+    #canchas .col-md-6 { 
+        margin-bottom: 20px; 
+    } 
+
+} 
+
+/* LOCALIZACIÓN */ 
+
+#localizacion { 
+    padding: 80px 40px; 
+} 
+
+#localizacion h1 { 
+    font-size: 3rem; 
+    margin-bottom: 40px; 
+} 
+
+.mapa-box { 
+    border-radius: 12px; 
+    overflow: hidden; 
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); 
+} 
+
+.info-box { 
+    background: white; 
+    border-radius: 12px; 
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); 
+    padding: 20px; 
+} 
+
+.info-box h3 { 
+    font-size: 1.5rem; 
+    margin-bottom: 15px; 
+    text-align: left; 
+} 
+
+.info-box p { 
+    font-size: 1rem; 
+    text-align: left; 
+    line-height: 1.6; 
+} 
+
+.info-box h5 { 
+    font-size: 1.1rem; 
+    margin-top: 15px; 
+    text-align: left; 
+    display: flex; 
+    align-items: center; 
+} 
+
+.info-box .btn { 
+    font-weight: bold; 
+    border-radius: 8px; 
+} 
+
+#localizacion .card { 
+    border: none; 
+    border-radius: 12px; 
+    transition: transform 0.2s ease, box-shadow 0.2s ease; 
+} 
+
+#localizacion .card:hover { 
+    transform: translateY(-5px); 
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2); 
+} 
+
+/* RESPONSIVE LOCALIZACIÓN */ 
+
+@media (max-width: 768px) { 
+
+    .info-box h3, 
+    .info-box p, 
+    .info-box h5 { 
+        text-align: center; 
+    } 
+.info-box h5 { 
+        justify-content: center; 
+    } 
+
+} 
+
+/* RESEÑAS */ 
+
+#resenas .resenas-container { 
+    width: 100% !important; 
+    max-width: 1100px !important; 
+    display: grid !important; 
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important; 
+    gap: 30px !important; 
+    padding: 30px 20px !important; 
+    box-sizing: border-box !important; 
+} 
+ 
+#resenas .resenas-container > .resena { 
+    width: 100% !important; 
+    min-width: 0 !important; 
+    max-width: 100% !important; 
+    box-sizing: border-box !important; 
+} 
+
+#resenas .resenas-container > .resena img { 
+    width: 100% !important; 
+    max-width: 100% !important; 
+    height: auto !important; 
+    display: block !important; 
+    object-fit: contain !important; 
+    border-radius: 12px !important; 
+} 
+
+/* RESEÑA 1 MÁS GRANDE */
+
+#resenas .resenas-container > .resena:first-child img {
+    width: 115% !important;
+    max-width: none !important;
+    height: auto !important;
+    margin-left: -7.5% !important;
+}
+
+
+/* RESPONSIVE RESEÑAS */ 
+
+@media (max-width: 900px) { 
+
+    #resenas .resenas-container { 
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important; 
+        gap: 20px !important; 
+        padding: 25px 15px !important; 
+    } 
+
+    #resenas .resenas-container > .resena img { 
+        width: 100% !important; 
+        max-width: 100% !important; 
+        height: auto !important; 
+    } 
+
+    #resenas .resenas-container > .resena:first-child img {
+        width: 115% !important;
+        max-width: none !important;
+        margin-left: -7.5% !important;
+    }
+ 
+} 
+ 
+@media (max-width: 600px) { 
+ 
+    #resenas .resenas-container { 
+        grid-template-columns: 1fr !important; 
+        gap: 20px !important; 
+        padding: 20px 10px !important; 
+    } 
+ 
+    #resenas .resenas-container > .resena img { 
+        width: 100% !important; 
+        max-width: 100% !important; 
+        height: auto !important; 
+        object-fit: contain !important; 
+    } 
+
+    #resenas .resenas-container > .resena:first-child img {
+        width: 105% !important;
+        max-width: none !important;
+        margin-left: -2.5% !important;
+    }
+ 
+} 
+ 
+/* RESPONSIVE TOP BAR */ 
+ 
+@media (max-width: 768px) { 
+ 
+    .top-bar { 
+        padding: 8px 10px; 
+    } 
+ 
+} 
+ 
+@media (max-width: 480px) { 
+ 
+    .mi-cuenta { 
+        padding: 5px 8px; 
+    } 
+ 
+    .mi-cuenta img { 
+        width: 20px; 
+        height: 20px; 
+    } 
+ 
+    .mi-cuenta span { 
+        font-size: 0.8rem; 
+    } 
+ 
+}
+
+/* RESEÑAS: una sola imagen ocupa todo el ancho de la sección */
+
+#resenas .resenas-container > .resena:only-child {
+    grid-column: 1 / -1 !important;
+}
+
+#resenas .resenas-container > .resena:only-child img {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+}
